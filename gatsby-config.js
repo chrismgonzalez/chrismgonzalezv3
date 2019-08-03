@@ -4,6 +4,7 @@ const config = require("./data/SiteConfig");
 module.exports = {
   pathPrefix: config.pathPrefix === "" ? "/" : config.pathPrefix,
   siteMetadata: {
+    title: config.siteTitle,
     siteUrl: urljoin(config.siteUrl, config.pathPrefix),
     rssMetadata: {
       site_url: urljoin(config.siteUrl, config.pathPrefix),
@@ -23,14 +24,14 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "assets",
+        name: "logos",
         path: `${__dirname}/static/`
       }
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "posts",
+        name: "content",
         path: `${__dirname}/content/`
       }
     },
@@ -66,6 +67,7 @@ module.exports = {
       }
     },
     "gatsby-plugin-sharp",
+    "gatsby-plugin-sass",
     "gatsby-transformer-sharp",
     "gatsby-plugin-catch-links",
     "gatsby-plugin-twitter",

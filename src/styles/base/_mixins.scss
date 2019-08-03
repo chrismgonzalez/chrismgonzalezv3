@@ -1,0 +1,38 @@
+/* Mixins
+  =============== */
+
+//fonts
+
+
+//Media queries for mobile first layouts
+
+
+@mixin small-breakpoint {
+  @media (min-width: #{$mobile}) {
+    @content;
+  }
+}
+
+//tablet
+
+@mixin medium-breakpoint {
+  @media(min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+//tablet landscape
+@mixin medium-breakpoint-landscape {
+  @media (orientation: landscape) {
+    @content;
+  }
+}
+//desktop
+
+@mixin large-breakpoint {
+  @media (min-width: #{$desktop}) {
+    @content
+  }
+}
+
+

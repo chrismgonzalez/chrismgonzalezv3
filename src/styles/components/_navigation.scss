@@ -1,0 +1,89 @@
+/* Navigation
+  =============== */
+
+.nav {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  background: $background;
+
+}
+
+.nav-container {
+  padding: 0 1.5rem;
+  height: 50px;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  letter-spacing: .5rem;
+}
+
+.brand {
+  a {
+    width: 25%;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+  }
+
+  .brand-text {
+    display: none;
+  }
+}
+
+
+.links {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  color: $background;
+  text-transform: uppercase;
+}
+
+.nav-text {
+  font-family: $coveredbyyourgrace;
+  color: #222;
+  margin: 0
+}
+
+.favicon {
+  height: 23px;
+  width: 23px;
+  margin-bottom: 0;
+}
+
+@include small-breakpoint {
+  .nav {
+    height: 75px;
+  }
+
+  .nav-container {
+    height: 75px;
+  }
+  .nav-text {
+    font-size: $font-size;
+  }
+  .brand {
+    width: 100%;
+
+    .brand-text {
+      margin-left: 1rem;
+      display: block;
+      padding: 1rem;
+    }
+
+    .favicon {
+      height: 50px;
+      width: 50px;
+    }
+  }
+}
