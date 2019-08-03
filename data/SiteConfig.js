@@ -23,7 +23,7 @@ const config = {
   menuLinks: [
     {
       name: 'Me',
-      link: '/me',
+      link: '/me/',
     },
     /* {
       name: 'Learn',
@@ -31,7 +31,7 @@ const config = {
     }, */
     {
       name: 'Contact',
-      link: '/contact',
+      link: '/contact/',
     }
   ],
   copywrite: 'Copyright 2019, chrismgonzalez.com',

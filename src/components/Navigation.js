@@ -1,47 +1,32 @@
 import React from 'react'
-import { Link, graphql, useStaticQuery } from 'gatsby'
+import { Link } from 'gatsby'
 import logo from '../../static/logos/logo.png'
 import '../styles/main.scss'
 
-const Navigation = props => {
-  const data = useStaticQuery(graphql`
-      query {
-        site {
-          siteMetadata {
-        title
-      }
-    }
-  }
-  `)
+export default class Navigation extends React.Component {
+  render() {
 
-  const { menuLinks } = props
+    const { menuLinks } = this.props
 
-  return (
-    <div className="nav">
-      <div className="nav-container">
-        <div className="brand">
-          <Link className="nav-text" to="/">
-            <img src={logo} class="favicon"></img>
-            <span className="brand-text">
-              {data.site.siteMetadata.title}
-            </span>
-          </Link>
-        </div>
-        <div className="links">
-          {menuLinks.map(link => (
-            <span key={link.name}className="nav-text">
-              <Link
-                to={link.link}
-              >
+    return (
+      <nav className="nav">
+        <div className="nav-container">
+          <div className="brand">
+            <Link className="nav-text" to="/">
+              <img src={logo} class="favicon"></img>
+              <span className="brand-text">Chris Gonzalez</span>
+            </Link>
+          </div>
+          <div className="links">
+            {menuLinks.map(link => (
+              <Link key={link.name} to={link.link} activeClassName="active">
                 {link.name}
               </Link>
-            </span>
-          )
-          )}
+            ))}
+          </div>
         </div>
-      </div>
-    </div>
-  )
+      </nav>
+    )
+  }
 }
 
-export default Navigation

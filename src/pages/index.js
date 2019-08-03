@@ -1,8 +1,10 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
+import GitHubButton from 'react-github-btn'
 import Layout from "../components/layout";
 import PostListing from "../components/PostListing";
+import ProjectListing from "../components/ProjectListing"
 import SEO from "../components/SEO";
 import config from "../../data/SiteConfig";
 import Header from '../components/Header'
@@ -16,7 +18,7 @@ class Index extends React.Component {
     return (
       <Layout>
         <div className="main-content container">
-          <Helmet title={config.siteTitle} />
+          <Helmet title={`${config.siteTitle} | Developer & Writer`} />
           <SEO />
           <Header />
           <div id="about" className="container about">

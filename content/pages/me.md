@@ -1,6 +1,6 @@
 ---
 title: About Me
-slug: me
+slug: 'me'
 template: page
 ---
 
