@@ -1,9 +1,10 @@
-import React from "react";
+import React, { Component } from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import GitHubButton from 'react-github-btn'
 import Layout from "../components/layout";
 import PostListing from "../components/PostListing";
+import SimpleListing from "../components/SimpleListing"
 import ProjectListing from "../components/ProjectListing"
 import SEO from "../components/SEO";
 import config from "../../data/SiteConfig";
@@ -12,12 +13,14 @@ import Tech from '../components/Tech'
 import projects from '../../data/projects'
 import '../styles/main.scss'
 
-class Index extends React.Component {
+export default class Index extends Component {
   render() {
-    const postEdges = this.props.data.allMarkdownRemark.edges;
+    const { data } = this.props
+
+    const latestPostEdges = data.latest.edges
     return (
       <Layout>
-        <div className="main-content container">
+        <div id="main-content container">
           <Helmet title={`${config.siteTitle} | Developer & Writer`} />
           <SEO />
           <Header />
@@ -46,7 +49,13 @@ class Index extends React.Component {
               </div>
             </div>
           </div>
-          <PostListing postEdges={postEdges} />
+          <div className = "container front-page">
+            <section className="section">
+              <h2 className="posts-heading">Latest Articles</h2>
+              <PostListing simple postEdges={latestPostEdges} />
+            </section>
+
+          </div>
           <Tech />
           <div className="container">
             <h2 className="projects-heading">{`Open Source`}</h2>
@@ -58,14 +67,14 @@ class Index extends React.Component {
   }
 }
 
-export default Index;
 
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark(
-      limit: 2000
+    latest: allMarkdownRemark(
+      limit: 6
       sort: { fields: [fields___date], order: DESC }
+      filter: { frontmatter: { template: { eq: "post" } } }
     ) {
       edges {
         node {
@@ -78,10 +87,49 @@ export const pageQuery = graphql`
           frontmatter {
             title
             tags
+            categories
+            thumbnail {
+              childImageSharp {
+                fixed(width: 150, height: 150) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
             date
+            template
+          }
+        }
+      }
+    }
+    popular: allMarkdownRemark(
+      limit: 7
+      sort: { fields: [fields___date], order: DESC }
+      filter: { frontmatter: { categories: { eq: "Popular" } } }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+            date
+          }
+          excerpt
+          timeToRead
+          frontmatter {
+            title
+            tags
+            categories
+            thumbnail {
+              childImageSharp {
+                fixed(width: 150, height: 150) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
+            date
+            template
           }
         }
       }
     }
   }
-`;
+`

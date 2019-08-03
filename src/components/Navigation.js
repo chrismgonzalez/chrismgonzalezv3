@@ -17,7 +17,7 @@ export default class Navigation extends React.Component {
               <span className="brand-text">Chris Gonzalez</span>
             </Link>
           </div>
-          <div className="links">
+          <div className="links nav-text">
             {menuLinks.map(link => (
               <Link key={link.name} to={link.link} activeClassName="active">
                 {link.name}

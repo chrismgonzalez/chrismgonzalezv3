@@ -27,7 +27,7 @@ $background-image: url("../../theme/assets/bluepoly.jpg");
  $desktop: $medium;
 
  $width: 850px;
- 
+
 /*Colors*/ //default colors to get you started - change them based on your design and branding
 
 $background: #fff;
@@ -42,6 +42,8 @@ $link-hover-color: lighten($link-color, 20%);
 $highlight: #ffeea8;
 $error: #D33C40;
 $bq-border: 16px solid #f0f0f0;
+$green: #12C47C;
+$yellow: #FED356;
 
 /*Typography*/
 
@@ -49,6 +51,7 @@ $bq-border: 16px solid #f0f0f0;
 $font-size: 1rem;
 $font-size-mobile: .75rem;
 $body-font-size: 1rem;
+$light: #f2f2f2;
 $font-style: normal;
 $font-variant: normal;
 $font-weight: normal;

@@ -1,5 +1,4 @@
 #main-content {
-  margin-top: 0;
   padding: 40px 0 0;
   min-height: calc(100vh - 162px);
 }
@@ -24,6 +23,27 @@
   }
 }
 // custom header styles
+.front-page {
+  margin-top: 2rem;
+  h2 {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+.section {
+  margin: 40px 0;
+
+  &:first-of-type {
+    margin-bottom: 0;
+  }
+}
+
+@include small-breakpoint {
+  .section {
+    margin: 4rem 0;
+  }
+}
 
 .gradient {
   background: linear-gradient(217deg, #acb6e5,#74ebd5);
@@ -130,6 +150,271 @@
   line-height: $line-height;
   letter-spacing: 1.5px;
 
+}
+
+.post-container {
+  display: flex;
+}
+
+.posts-heading {
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-right: 2rem;
+    color: rgba(0,0,0,.8);
+    font-size: $h1-mobile;
+    opacity: 0.6;
+}
+
+.posts {
+  a {
+    display: block;
+
+    .each {
+      display: grid;
+      align-items: center;
+      grid-template-columns: 60px 1fr 0;
+      padding: 1rem 0;
+      margin: 0;
+      border: 2px solid transparent;
+      border-bottom: 2px solid $light;
+
+      .date {
+        margin: 0;
+        font-size: 0.9rem;
+        color: rgba(0, 0, 0, 0.4);
+        font-weight: 400;
+      }
+    }
+
+    &:last-of-type {
+      .each {
+        border-bottom-color: transparent;
+      }
+    }
+  }
+
+  h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.3;
+    border-bottom: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .gatsby-image-wrapper {
+    margin-top: 0;
+    height: 40px !important;
+    width: 40px !important;
+  }
+
+  .excerpt {
+    display: none;
+  }
+
+  &.simple {
+    a {
+      .each {
+        grid-template-columns: 50px 2fr auto;
+        align-items: center;
+        padding: 0.5rem 0;
+        margin: 0;
+        border: 2px solid transparent;
+
+        &:hover {
+          background: white;
+        }
+      }
+    }
+
+    .gatsby-image-wrapper {
+      margin-top: 0;
+      height: 30px !important;
+      width: 30px !important;
+    }
+
+    h2 {
+      font-weight: 500;
+      padding: 0;
+      margin: 0;
+      color: $font-color-light;
+
+      &:hover {
+        color: #111;
+      }
+    }
+  }
+}
+
+@include small-breakpoint {
+  .posts {
+    margin: 3rem 0;
+
+    a {
+      .each {
+        grid-template-columns: 80px 1fr 90px;
+        align-items: start;
+        padding: 1rem 2rem;
+        margin: 0 -2rem;
+
+        &:hover {
+          border-radius: $border-radius;
+          background: $light;
+
+          &last-of-type {
+            &:hover {
+              border-bottom-color: $primary-color;
+            }
+          }
+
+          h2 {
+            color: #111;
+          }
+        }
+
+        &:active,
+        &:focus {
+          border: 2px dashed $primary-color;
+          background: $link-hover-color;
+        }
+
+        h2 {
+          font-size: 1.3rem;
+          line-height: 1.3;
+          margin: 0 0 0.25rem 0;
+        }
+
+        .gatsby-image-wrapper {
+          margin-top: 0;
+          height: 50px !important;
+          width: 50px !important;
+        }
+      }
+
+      .excerpt {
+        font-size: 1rem;
+        display: block;
+        color: rgba(0, 0, 0, 0.4);
+        font-weight: 500;
+      }
+    }
+
+    &.simple {
+      a {
+        .each {
+          padding: 0.5rem 1rem;
+          margin: 0 -1rem;
+
+          &:hover {
+            border: 2px solid $light;
+            background: $light;
+          }
+
+          &:active,
+          &:focus {
+            border: 2px dashed $primary-color;
+            background: $link-hover-color;
+          }
+
+          h2 {
+            margin: 0;
+          }
+
+          .gatsby-image-wrapper {
+            height: 30px !important;
+            width: 30px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.alert {
+  display: none;
+  align-self: center;
+  justify-self: flex-end;
+
+  .new {
+    display: inline-block;
+    font-size: 0.9rem;
+    background: lighten($primary-color, 40%);
+    color: darken($primary-color, 18%);
+    border-radius: $border-radius;
+    padding: 0.5rem 1rem;
+    text-align: center;
+  }
+
+  .popular {
+    display: inline-block;
+    font-size: 0.9rem;
+    background: lighten($green, 50%);
+    color: $green;
+    border-radius: $border-radius;
+    padding: 0.5rem 1rem;
+    text-align: center;
+  }
+}
+
+@include small-breakpoint {
+  .alert {
+    margin-left: 1rem;
+    display: block;
+  }
+}
+
+.simple-posts {
+  a {
+    .each {
+      padding: 0.5rem 0;
+      margin: 0;
+      border: 2px solid transparent;
+      border-radius: $border-radius;
+
+      h2 {
+        font-size: 1.1rem;
+        font-weight: 500;
+        padding: 0;
+        margin: 0;
+        color: $font-color-light;
+        border-bottom: none;
+        display: flex;
+        align-items: center;
+      }
+
+      img {
+        margin-right: 1rem;
+        margin-bottom: 0;
+        max-height: 30px;
+        max-width: 30px;
+      }
+
+      &:hover {
+        border: 2px solid $light;
+        background: $light;
+
+        h2 {
+          color: #111;
+        }
+      }
+    }
+  }
+}
+
+@include small-breakpoint {
+  .simple-posts {
+    a {
+      .each {
+        padding: 0.5rem 1rem;
+        margin: 0 -1rem;
+
+        h2 {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
 }
 
 //tech component custom styles
@@ -383,7 +668,7 @@
       padding: 1rem 0;
       margin: 0;
       border: 2px solid transparent;
-      border-bottom: 2px solid $alternate-color;
+      border-bottom: 2px solid $light;
 
       .date {
         margin: 0;
@@ -402,6 +687,7 @@
 
   h2 {
     font-size: 1.1rem;
+    font-weight: 600;
     line-height: 1.3;
     border-bottom: none;
     margin: 0;
@@ -423,7 +709,7 @@
       .each {
         grid-template-columns: 50px 2fr auto;
         align-items: center;
-        padding: 1rem 0;
+        padding: 0.5rem 0;
         margin: 0;
         border: 2px solid transparent;
 
@@ -443,7 +729,7 @@
       font-weight: 500;
       padding: 0;
       margin: 0;
-      color: $alternate-color;
+      color: $link-color;
 
       &:hover {
         color: #111;
@@ -451,6 +737,134 @@
     }
   }
 }
+
+@include small-breakpoint {
+  .posts {
+    margin: 3rem 0;
+
+    a {
+      .each {
+        grid-template-columns: 80px 1fr 90px;
+        align-items: start;
+        padding: 1rem 2rem;
+        margin: 0 -2rem;
+
+        &:hover {
+          border-radius: $border-radius;
+          background: $light;
+
+          &last-of-type {
+            &:hover {
+              border-bottom-color: $primary-color;
+            }
+          }
+
+          h2 {
+            color: #111;
+          }
+        }
+
+        &:active,
+        &:focus {
+          border: 2px dashed $primary-color;
+          background: $link-hover-color;
+        }
+
+        h2 {
+          font-size: 1.3rem;
+          line-height: 1.3;
+          margin: 0 0 0.25rem 0;
+        }
+
+        .gatsby-image-wrapper {
+          margin-top: 0;
+          height: 50px !important;
+          width: 50px !important;
+        }
+      }
+
+      .excerpt {
+        font-size: 1rem;
+        display: block;
+        color: rgba(0, 0, 0, 0.4);
+        font-weight: 500;
+      }
+    }
+
+    &.simple {
+      a {
+        .each {
+          padding: 0.5rem 1rem;
+          margin: 0 -1rem;
+
+          &:hover {
+            border: 2px solid $light;
+            background: $light;
+          }
+
+          &:active,
+          &:focus {
+            border: 2px dashed $primary-color;
+            background: $link-hover-color;
+          }
+
+          h2 {
+            margin: 0;
+          }
+
+          .gatsby-image-wrapper {
+            height: 30px !important;
+            width: 30px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+h2.publication-company {
+  display: flex;
+  align-items: center;
+
+  img {
+    max-height: 50px;
+    margin: 0 1rem 0 0;
+  }
+}
+
+.alert {
+  display: none;
+  align-self: center;
+  justify-self: flex-end;
+
+  .new {
+    display: inline-block;
+    font-size: 0.9rem;
+    background: lighten($primary-color, 40%);
+    color: darken($primary-color, 18%);
+    border-radius: $border-radius;
+    padding: 0.5rem 1rem;
+    text-align: center;
+  }
+
+  .popular {
+    display: inline-block;
+    font-size: 0.9rem;
+    background: lighten($green, 50%);
+    color: $green;
+    border-radius: $border-radius;
+    padding: 0.5rem 1rem;
+    text-align: center;
+  }
+}
+
+@include small-breakpoint {
+  .alert {
+    margin-left: 1rem;
+    display: block;
+  }
+}
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-date: "2019-06-08"
-title: "Getting Started"
+date: "2019-08-03"
+title: "Getting Started With Gatsby"
 template: "post"
 thumbnail: "../images/gatsby.png"
 slug: "getting-started-with-gatsby"
