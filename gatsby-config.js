@@ -57,6 +57,7 @@ module.exports = {
               maxWidth: 850,
             },
           },
+          'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
           {
             resolve: `gatsby-remark-autolink-headers`,
@@ -66,7 +67,6 @@ module.exports = {
               removeAccents: true,
             },
           },
-          'gatsby-remark-prismjs',
         ],
       },
     },
