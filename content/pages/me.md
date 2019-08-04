@@ -8,7 +8,7 @@ I’m Chris Gonzalez, a full-stack software developer, technical writer, and mus
 
 The goal of this site is to not only showcase my work, but provide a place where I can document my learning. The best way for me to learn is to teach others through speaking, writing, and video.  I do not make a dime from this site, so stick around and learn with me. Lastly, I wouldn't be able to produce content and curate this place without the support of my beautiful wife and son.
 
-### Some content  I've written for Flint Hills Group
+### Some content I've written for Flint Hills Group
 
 [Why You Shouldn't Overlook Soft Skills In Software Developers](https://flinthillsgroup.com/soft-skills-in-software-development/)
 
@@ -21,7 +21,7 @@ The goal of this site is to not only showcase my work, but provide a place where
 - Twitter: [@ChrisMGDev](https://twitter.com/ChrisMGDev)
 - LinkedIn: [Chris Gonzalez](https://linkedin.com/in/cmgonzalez89)
 
-## My setup
+### My setup
 
 - **Computer:** 15 inch Lenovo Thinkpad running Linux Mint 19 and Windows 10.
 - **Hosting:** [Netlify](https://netlify.com)

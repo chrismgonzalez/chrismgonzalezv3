@@ -1,10 +1,12 @@
 #main-content {
+  margin-top: 55px;
   padding: 40px 0 0;
   min-height: calc(100vh - 162px);
 }
 
 @include small-breakpoint {
   #main-content {
+    margin-top: 92px;
     padding: 60px 0 0;
     min-height: calc(100vh - 219px);
   }
@@ -164,6 +166,40 @@
     color: rgba(0,0,0,.8);
     font-size: $h1-mobile;
     opacity: 0.6;
+}
+.single-header {
+  display: grid;
+  margin-bottom: 30px;
+
+  &.no-thumbnail {
+    display: flex;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    margin: 0.5rem 0;
+    font-weight: 600;
+  }
+
+  .post-meta {
+    margin-bottom: 1rem;
+  }
+}
+
+@include small-breakpoint {
+  .single-header {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    margin-bottom: 80px;
+
+    h1 {
+      margin: 0 0 0.5rem 0;
+    }
+  }
 }
 
 .posts {
@@ -395,7 +431,7 @@
         background: $light;
 
         h2 {
-          color: #111;
+          color: $font-color-light;
         }
       }
     }
@@ -609,6 +645,114 @@
     .button {
       padding: 0.45rem 1.25rem;
       font-size: 0.9rem;
+    }
+  }
+}
+
+//tags
+
+.tag-container {
+  span {
+    display: inline-block;
+    padding: 0.3rem 0.5rem;
+    background: $light;
+    border-radius: $border-radius;
+    color: lighten($font-color-dark, 10%);
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin: 0 0.5rem 0.5rem 0;
+
+    .count {
+      color: $secondary-color;
+      font-weight: 700;
+      margin-left: 0.25rem;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      background: darken($light, 5%);
+      color: $font-color-dark;
+    }
+  }
+
+  &.articles-page-tags {
+    margin-bottom: 1rem;
+  }
+}
+
+@include small-breakpoint {
+  .tag-container {
+    span {
+      font-size: 0.9rem;
+      font-weight: 500;
+      padding: 0.3rem 0.8rem;
+
+      .count {
+        margin-left: 0.5rem;
+      }
+    }
+
+    &.articles-page-tags {
+      margin-bottom: 2rem;
+      display: flex;
+
+      a {
+        flex: 1;
+
+        span {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+.post-meta {
+  font-size: 0.8rem;
+  color: $font-color-dark;
+  display: inline-block;
+
+  .date {
+    margin-right: 0.5rem;
+  }
+
+  a {
+    color: $font-color-dark;
+
+    &.comment-link,
+    &.twitter-link,
+    &.github-link {
+      margin: 0 0.5rem;
+    }
+
+    &.comment-link {
+      text-transform: lowercase;
+    }
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+@include small-breakpoint {
+  .post-meta {
+    font-size: 0.9rem;
+  }
+}
+
+@include small-breakpoint {
+  .quotations {
+    display: flex;
+
+    .quotation {
+      margin: 1rem;
+      padding: 2.5 2.5rem 3.5rem;
+      border-radius: $border-radius;
+      flex: 1;
+      box-shadow: 0 3px 13px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.08);
     }
   }
 }

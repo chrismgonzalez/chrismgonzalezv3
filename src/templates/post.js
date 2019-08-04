@@ -68,12 +68,6 @@ export default class PostTemplate extends Component {
               Discuss
             </a>
           </div>
-          <h3>Join the newsletter</h3>
-          <p>
-            I write about JavaScript, programming, and front-end design. Join over{' '}
-            <strong className="pink">6,000</strong> other developers in keeping up with my content.
-            Unsubscribe whenever. <b>Never any spam, ads, or affiliate links.</b>
-          </p>
         </article>
       </Layout>
     )
