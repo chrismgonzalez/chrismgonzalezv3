@@ -4,8 +4,8 @@ title: "Personal Goals"
 template: "post"
 thumbnail: "../images/favicon.png"
 slug: "personal-goals"
-categories: [tools]
-tags: [tools]
+categories: [personal]
+tags: [personal]
 ---
 
 This post is about personal goals!!!

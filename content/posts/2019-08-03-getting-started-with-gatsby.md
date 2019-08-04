@@ -4,8 +4,8 @@ title: "Getting Started With Gatsby"
 template: "post"
 thumbnail: "../images/gatsby.png"
 slug: "getting-started-with-gatsby"
-categories: [personal]
-tags: [personal, goals]
+categories: [tools]
+tags: [tools, gatsby]
 ---
 
 This is a test!!
