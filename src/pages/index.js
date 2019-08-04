@@ -52,6 +52,7 @@ export default class Index extends Component {
           <div className = "container front-page">
             <section className="section">
               <h2 className="posts-heading">Latest Articles</h2>
+              <hr/>
               <PostListing simple postEdges={latestPostEdges} />
             </section>
 

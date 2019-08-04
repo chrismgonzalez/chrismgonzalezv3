@@ -8,9 +8,7 @@ categories: [tools]
 tags: [tools]
 ---
 
-This is a blog post about about testing the functionality
-
-![React Logo](./images/react.png)
+This is a test!!
 
 ## Topics Covered
 
