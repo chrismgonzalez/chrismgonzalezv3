@@ -25,10 +25,10 @@ const config = {
       name: 'Me',
       link: '/me/',
     },
-    /* {
+    {
       name: 'Learn',
       link: '/blog',
-    }, */
+    },
     {
       name: 'Contact',
       link: '/contact/',

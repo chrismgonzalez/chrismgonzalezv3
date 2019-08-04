@@ -1012,6 +1012,93 @@ h2.publication-company {
     display: block;
   }
 }
+.search {
+  margin-bottom: 0;
+}
+
+.filter-count {
+  width: 80px;
+  text-align: center;
+  color: $primary-color;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.category-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+
+  .category-filter {
+    display: flex;
+    align-items: center;
+    font-size: 0.85rem;
+    padding: 0.5rem 0.75rem;
+    background: lighten($primary-color, 40%);
+    border-radius: $border-radius;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: $primary-color;
+    cursor: pointer;
+
+    .count {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      margin-left: 1rem;
+      color: $primary-color;
+      height: 23px;
+      width: 23px;
+      border-radius: 50%;
+      padding: 5px 5px 5px 5px;
+    }
+
+    &.active {
+      background: $primary-color;
+      color: white;
+
+      .count {
+        background: white;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: white;
+        background: darken($primary-color, 10%);
+      }
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    &:hover {
+      background: lighten($primary-color, 28%);
+      color: darken($primary-color, 5%);
+    }
+  }
+}
+
+@include small-breakpoint {
+  .category-container {
+    margin-bottom: 1.5rem;
+
+    .category-filter {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+    }
+  }
+}
 
 
 
