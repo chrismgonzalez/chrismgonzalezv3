@@ -32,7 +32,13 @@ const Footer = () => {
         >
           Inbox
         </a>
-        <p>&copy; 2018 | Chris Gonzalez</p>
+        <a
+          href="https://github.com/chrismgonzalez/chrismgonzalezv3"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View Source
+        </a>
       </div>
     </footer>
   )

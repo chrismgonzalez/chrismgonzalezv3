@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from '../components/layout'
 import PostTags from '../components/PostTags'
+import UserInfo from '../components/UserInfo'
 import SEO from '../components/SEO'
 import config from '../../data/SiteConfig'
 import { formatDate, editOnGithub } from '../utils/global'
@@ -69,6 +70,7 @@ export default class PostTemplate extends Component {
             </a>
           </div>
         </article>
+        <UserInfo config={config}/>
       </Layout>
     )
   }
