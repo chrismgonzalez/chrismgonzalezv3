@@ -11,13 +11,13 @@ const config = {
   siteDescription:
     'Chris Gonzalez is a free lance developer learning the full-stack. He specializes in modern JavaScript. He enjoys writing about what he learns so that others have a simple path to knowledge',
   siteRss: '/rss.xml',
-  googleAnalyticsID: 'UA-42068444-1',
+  googleAnalyticsID: 'UA-145115719-1',
   postDefaultCategoryID: 'Tech',
   userName: 'Chris',
   userEmail: 'cmgonza89@gmail.com',
   userTwitter: 'ChrisMGDev',
   userLocation: 'Fort Worth, TX',
-  userAvatar: 'https://api.adorable.io/avatars/150/test.png',
+  userAvatar: '../content/images/Avatar.jpg',
   userDescription:
     'I build open source projects and write the missing instruction manuals of the web.',
   menuLinks: [

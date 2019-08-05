@@ -41,3 +41,7 @@ This is going to be a fully JavaScript app, which means everything will be handl
   </body>
 </html>
 ```
+
+>here is an example of a blockquote [with a link](https://www.google.com)
+
+`inline code example`

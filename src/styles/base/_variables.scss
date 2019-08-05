@@ -44,6 +44,7 @@ $error: #D33C40;
 $bq-border: 16px solid #f0f0f0;
 $green: #12C47C;
 $yellow: #FED356;
+$blue: #6ab0f3;
 
 /*Typography*/
 
@@ -145,15 +146,30 @@ $form-border-focus: 1px solid $link-color;
 $stripes: #f8f8f8;
 $caption: #ababab;
 
+
 /* Code */
 
-$code-color: $font-color-dark;
+$code-color: $font-color-light;
 $code-size: 14px;
-$code-family: Menlo, monospace;
+$code-family: Menlo,'Roboto Mono', monospace;
 $code-background: transparent;
 $code-borders: $borders;
 
+$nav-height: 90px;
 
-
-
+$code-font-family: 'Roboto Mono', Courier New, monospace;
+$code-font-color: #b3b9c5;
+$string: #92d192;
+$variable: #f2777a;
+$property: #abb2bf;
+$number: #fca369;
+$operator: #ac8d58;
+$punctuation: #d5d8df;
+$comment: #777c85;
+$function: #62cfcf;
+$keyword: #ffeead;
+$attribute: #ffd479;
+$class: #e1a6f2;
+$tag: #6ab0f3;
+$error: #f2777a;
 
