@@ -26,19 +26,9 @@ body {
 }
 
 p,
-ol,
-ul,
 dl,
 table {
   margin: 0 0 $margins 0;
-}
-
-// Remove extra margin for nested lists
-ul li ul {
-  margin-bottom: 0;
-  list-style: none;
-  position: relative;
-  display: inline-block;
 }
 
 ol li ol {
