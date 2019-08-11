@@ -21,7 +21,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  letter-spacing: .5rem;
+  letter-spacing: .10rem;
 }
 
 .brand {
@@ -55,9 +55,9 @@
 }
 
 .favicon {
-  height: 23px;
-  width: 23px;
   margin-bottom: 0;
+  width: 100px;
+  height: 25px;
 }
 
 @include small-breakpoint {
