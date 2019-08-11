@@ -37,7 +37,7 @@
   margin: 40px 0;
 
   &:first-of-type {
-    margin-bottom: 0;
+    margin-bottom: 1rem;
   }
 }
 
@@ -540,6 +540,7 @@
 .icon {
     width: 80px;
     height: 80px;
+    margin-bottom: 0;
     @mixin small-breakpoint {
       height: 100px;
       width: 100px;
@@ -781,6 +782,7 @@
 
 .footer-text {
   margin: 1em;
+  font-size: .75rem;
   font-family: Roboto;
   font-weight: 400;
   letter-spacing: 1.2px;
@@ -792,7 +794,10 @@
 
   a {
     padding: .5rem;
+
+    @mixin small-breakpoint {
     font-size: $font-size;
+  }
   }
   a:hover {
     color: #444 !important;
