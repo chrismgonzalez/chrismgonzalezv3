@@ -14,6 +14,8 @@ The goal of this site is to not only showcase my work, but provide a place where
 
 [What You Need to Know Before Migrating to AWS](https://flinthillsgroup.com/need-to-know-before-migrating-to-aws/)
 
+[5 Benefits To Hiring A Development Agency Vs In-House Developers](https://flinthillsgroup.com/benefits-to-hiring-development-agency-vs-in-house-developers/)
+
 ### Around the web
 
 - Email: [cmgonza89@gmail.com](mailto:cmgonza89@gmail.com)
