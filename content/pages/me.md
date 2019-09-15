@@ -16,6 +16,9 @@ The goal of this site is to not only showcase my work, but provide a place where
 
 [5 Benefits To Hiring A Development Agency Vs In-House Developers](https://flinthillsgroup.com/benefits-to-hiring-development-agency-vs-in-house-developers/)
 
+[4 Reasons You Should Be Using React](https://flinthillsgroup.com/reasons-you-should-be-using-react-in-app-development/)
+
+
 ### Around the web
 
 - Email: [cmgonza89@gmail.com](mailto:cmgonza89@gmail.com)
