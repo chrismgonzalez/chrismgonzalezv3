@@ -1,53 +1,64 @@
-import React from 'react'
-import jsLogo from '../../content/images/js.png'
-import reactLogo from '../../content/images/react.png'
-import gatsbyLogo from '../../content/images/gatsby.png'
-import netlifyLogo from '../../content/images/netlify.png'
-import jestLogo from '../../content/images/jest.png'
-import travisLogo from '../../content/images/TravisCI.png'
+import React from "react";
+import jsLogo from "../../content/images/js.png";
+import reactLogo from "../../content/images/react.png";
+import gatsbyLogo from "../../content/images/gatsby.png";
+import netlifyLogo from "../../content/images/netlify.png";
+import jestLogo from "../../content/images/jest.png";
+import travisLogo from "../../content/images/TravisCI.png";
+import nodeLogo from "../../content/images/node.png";
+import graphQl from "../../content/images/graphql.png";
 
 const Tech = () => {
   const data = [
     {
-      name: 'Javascript',
+      name: "Javascript",
       logo: jsLogo,
-      alt: 'javascript-logo'
+      alt: "javascript-logo"
     },
     {
-      name: 'React',
+      name: "NodeJS",
+      logo: nodeLogo,
+      alt: "nodejs-logo"
+    },
+    {
+      name: "React",
       logo: reactLogo,
-      alt: 'react-logo'
+      alt: "react-logo"
     },
     {
-      name: 'Gatsby',
+      name: "GraphQL",
+      logo: graphQl,
+      alt: "graphql-logo"
+    },
+    {
+      name: "Gatsby",
       logo: gatsbyLogo,
-      alt: 'gatsby-logo'
+      alt: "gatsby-logo"
     },
     {
-      name: 'Netlify',
+      name: "Netlify",
       logo: netlifyLogo,
-      alt: 'netlify-logo'
+      alt: "netlify-logo"
     },
     {
-      name: 'Travis',
+      name: "Travis",
       logo: travisLogo,
-      alt: 'travis-logo'
+      alt: "travis-logo"
     },
     {
-      name: 'Jest',
+      name: "Jest",
       logo: jestLogo,
-      alt: 'jest-logo'
-    },
-  ]
+      alt: "jest-logo"
+    }
+  ];
 
   return (
     <div className="tech-gradient">
       <div className="tech-wrapper container">
         <div className="tech-text">
           <p>
-
-              I am always learning new languages, frameworks, and tooling, such as...
-
+            I am always learning new languages, frameworks, and tooling, such
+            as...
           </p>
         </div>
         <div className="tech-icon-wrapper">
@@ -60,7 +71,7 @@ const Tech = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Tech
+export default Tech;
