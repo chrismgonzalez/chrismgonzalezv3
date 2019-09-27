@@ -28,7 +28,7 @@ The goal of this site is to not only showcase my work, but provide a place where
 
 ### My setup
 
-- **Computer:** 15 inch Lenovo Thinkpad running Linux Mint 19 and Windows 10.
+- **Computer:** 15 inch Lenovo Thinkpad running Ubuntu 18.04 and Windows 10.
 - **Hosting:** [Netlify](https://netlify.com)
 - **Editor:** [Visual Studio Code](https://code.visualstudio.com/)
 - **Static Site Generator:** [Gatsby](https://gatsbyjs.org)
