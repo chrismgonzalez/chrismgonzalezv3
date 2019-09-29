@@ -25,11 +25,7 @@ const Tech = () => {
       logo: reactLogo,
       alt: "react-logo"
     },
-    {
-      name: "GraphQL",
-      logo: graphQl,
-      alt: "graphql-logo"
-    },
+
     {
       name: "Gatsby",
       logo: gatsbyLogo,
@@ -40,11 +36,7 @@ const Tech = () => {
       logo: netlifyLogo,
       alt: "netlify-logo"
     },
-    {
-      name: "Travis",
-      logo: travisLogo,
-      alt: "travis-logo"
-    },
+
     {
       name: "Jest",
       logo: jestLogo,
