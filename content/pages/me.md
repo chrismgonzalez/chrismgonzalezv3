@@ -18,6 +18,8 @@ The goal of this site is to not only showcase my work, but provide a place where
 
 [4 Reasons You Should Be Using React](https://flinthillsgroup.com/reasons-you-should-be-using-react-in-app-development/)
 
+[4 Trends in Software Development You Should Be Aware Of](https://flinthillsgroup.com/4-trends-in-software-development/)
+
 
 ### Around the web
 
