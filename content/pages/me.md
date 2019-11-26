@@ -20,6 +20,10 @@ The goal of this site is to not only showcase my work, but provide a place where
 
 [4 Trends in Software Development You Should Be Aware Of](https://flinthillsgroup.com/4-trends-in-software-development/)
 
+[Technical Debt: What Is It And How Can It Put Your Company At Risk](https://flinthillsgroup.com/what-is-technical-debt/)
+
+[How to Get Out of Technical Debt](https://flinthillsgroup.com/how-to-get-out-of-technical-debt/)
+
 
 ### Around the web
 
