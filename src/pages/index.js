@@ -4,7 +4,7 @@ import { graphql } from "gatsby";
 import GitHubButton from 'react-github-btn'
 import Layout from "../components/layout";
 import PostListing from "../components/PostListing";
-import ProjectListing from "../components/ProjectListing"
+import ProjectListing from "../components/ProjectListing";
 import SEO from "../components/SEO";
 import config from "../../data/SiteConfig";
 import Header from '../components/Header'
@@ -19,36 +19,45 @@ export default class Index extends Component {
     const latestPostEdges = data.latest.edges
     return (
       <Layout>
-        <div id="main-content container">
+        <div id="main-contentr">
           <Helmet title={`${config.siteTitle} | Developer & Writer`} />
           <SEO />
           <Header />
-          <div id="about" className="container about">
+          <div id="about" className="container">
             <h3 className="about-heading">{`about me`}</h3>
             <br />
-            <div className="about-text">
-              <p>
-                {`I am a freelance web developer based in Fort Worth, Texas. I
-                  have a passion for web development, music, and coffee. I am a music
-                  educator by day, and a developer by night. I am fascinated by engineering
-                  complex apps. I love learning new technologies and sharing knowledge
-                  I have learned with others.`}
-              </p>
-              <div className="social-buttons">
-                <div>
-                  <a
-                    className="twitter-follow-button"
-                    href="https://twitter.com/ChrisMGDev"
-                    data-size="large"
-                    data-show-screen-name="false"
-                  >
-                    Follow @ChrisMGDev
+            <div className="about lead">
+              <div className="about-text">
+                <p>
+                  {`I am a freelance web developer based in Fort Worth, Texas. I
+                  have a passion for web development, music, and coffee. `}
+                </p>
+                <div className="social-buttons">
+                  <div>
+                    <a
+                      className="twitter-follow-button"
+                      href="https://twitter.com/ChrisMGDev"
+                      data-size="large"
+                      data-show-screen-name="false"
+                    >
+                      Follow @ChrisMGDev
                   </a>
-                  <GitHubButton href="https://github.com/chrismgonzalez" data-size="large" data-show-count="true" aria-label="Follow @chrismgonzalez on GitHub">Follow</GitHubButton></div>
+                    <GitHubButton href="https://github.com/chrismgonzalez" data-size="large" data-show-count="true" aria-label="Follow @chrismgonzalez on GitHub">Follow</GitHubButton>
+
+                  </div>
+                </div>
+              </div>
+              <div className="newsletter-section">
+                <div>
+                  <h3>Want updates?</h3>
+                  <p>Receive my latest news in your inbox</p>
+                  <a className="button" href="https://https://chrisgonzalez.substack.com"> Sign up!</a>
+                </div>
               </div>
             </div>
+
           </div>
-          <div className = "container front-page">
+          <div className = "front-page container">
             <section className="section">
               <h2 className="posts-heading">Latest Articles</h2>
               <hr/>

@@ -119,6 +119,19 @@
 
 //about section styles
 
+.lead {
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+@include small-breakpoint {
+  .lead {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+}
+
 .about {
   margin-bottom: 2rem;
   display: flex;
@@ -127,7 +140,12 @@
   align-items: right;
   justify-content: center;
   font-family: $font-family;
+}
 
+@include small-breakpoint {
+  .about {
+    flex-direction: row;
+  }
 }
 
 .about-heading {
@@ -144,6 +162,7 @@
   @include small-breakpoint {
     font-size: $h1;
     margin: 0;
+
   }
 }
 .about-text {
@@ -152,7 +171,21 @@
   font-size: $font-size;
   line-height: $line-height;
   letter-spacing: 1.5px;
-
+}
+@include small-breakpoint {
+  .about-text {
+    width: 500px;
+  }
+}
+.newsletter-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 4px;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  text-align: center;
+  background: #f0f0f0;
 }
 
 .post-container {
