@@ -7,7 +7,7 @@ export default class ProjectListing extends React.Component {
     return (
       <div className="projects">
         {projects.map(project => (
-          <div key={project.title}className="each">
+          <div key={project.title} className="each">
             <h2>
               <a href={project.source}>
                 <div className="project-title">{project.title}</div>

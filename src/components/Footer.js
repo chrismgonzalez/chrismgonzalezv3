@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import config from '../../data/SiteConfig'
 
 const Footer = () => {
   return (
@@ -39,6 +40,10 @@ const Footer = () => {
         >
           View Source
         </a>
+
+      </div>
+      <div>
+        <span><p>{config.copyright}</p></span>
       </div>
     </footer>
   )

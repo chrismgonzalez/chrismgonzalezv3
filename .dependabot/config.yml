@@ -1,0 +1,16 @@
+version: 1
+update_configs:
+  
+  - package_manager: "javascript"
+    directory: "/"
+    update_schedule: "weekly"
+    target_branch: "to-release"
+    commit_message:
+      prefix: "chore"
+
+    # Apply default reviewer and label to created
+    # pull requests
+    default_reviewers:
+      - "chrismgonzalez"
+    default_labels:
+      - "updgrade-deps"
