@@ -34,7 +34,7 @@ const config = {
       link: '/contact/',
     }
   ],
-  copywrite: 'Copyright 2019, chrismgonzalez.com',
+  copyright: `Copyright © ${new Date().getFullYear()} Chris Gonzalez.  All Rights Reserved.`,
   themeColor: '#3F80FF', // Used for setting manifest and progress theme colors.
   backgroundColor: '#ffffff',
 }
