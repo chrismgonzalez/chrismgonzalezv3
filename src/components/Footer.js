@@ -42,8 +42,8 @@ const Footer = () => {
         </a>
 
       </div>
-      <div>
-        <span><p>{config.copyright}</p></span>
+      <div class="footer-copyright">
+        <p>{config.copyright}</p>
       </div>
     </footer>
   )
