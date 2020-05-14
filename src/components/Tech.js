@@ -4,9 +4,8 @@ import reactLogo from "../../content/images/react.png";
 import gatsbyLogo from "../../content/images/gatsby.png";
 import netlifyLogo from "../../content/images/netlify.png";
 import jestLogo from "../../content/images/jest.png";
-import travisLogo from "../../content/images/TravisCI.png";
 import nodeLogo from "../../content/images/node.png";
-import graphQl from "../../content/images/graphql.png";
+
 
 const Tech = () => {
   const data = [
